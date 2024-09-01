@@ -3,7 +3,7 @@ from myproject.items import TextToPdfItem
 
 class TextSpider(scrapy.Spider):
     name = 'myspider'
-    start_urls = ['https://en.wikipedia.org/wiki/2024_Summer_Paralympics'] 
+    start_urls = ['http://www.nits.ac.in/'] 
 
     def parse(self, response):
         html_content = response.body

@@ -15,7 +15,7 @@ NEWSPIDER_MODULE = "myproject.spiders"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "myproject (+http://www.yourdomain.com)"
-USER_AGENT = 'myproject (+https://en.wikipedia.org/wiki/2024_Summer_Paralympics)'
+USER_AGENT = 'myproject (+http://www.nits.ac.in/)'
 
 
 # Obey robots.txt rules
