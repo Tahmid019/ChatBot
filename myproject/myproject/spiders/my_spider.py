@@ -1,0 +1,17 @@
+import scrapy
+from myproject.items import TextToPdfItem
+
+class TextSpider(scrapy.Spider):
+    name = 'myspider'
+    start_urls = ['https://en.wikipedia.org/wiki/2024_Summer_Paralympics'] 
+
+    def parse(self, response):
+        html_content = response.body
+
+        filename = 'raw_html.html'
+        with open(filename, 'wb') as f:
+            f.write(html_content)
+
+        self.log(f'Saved file {filename}')
+
+        
